@@ -19,8 +19,10 @@ function signup() {
 }
 
 // Login Function
+
+
 function login() {
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
 
     if (localStorage.getItem(email) === password && email) {
@@ -30,6 +32,7 @@ function login() {
         showMessage("Invalid email or password.");
     }
 }
+
 
 function showMessage(message) {
     document.getElementById("loginMessage").textContent = message;
