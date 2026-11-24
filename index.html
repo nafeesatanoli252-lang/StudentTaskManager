@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Task Manager</h1>
+        <p class="subtitle">Organize your study tasks easily!</p>
+
+        <!-- Login Section -->
+        <div id="loginSection" class="card">
+            <h2>Student Login / Signup</h2>
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="signup()">Signup</button>
+            <button onclick="login()">Login</button>
+            <p id="loginMessage"></p>
+        </div>
+
+        <!-- Task Section -->
+        <div id="taskSection" class="card hidden">
+            <h2>My Tasks</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
